@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Esto logra que se vea TODO el body */
+    /* sin poder hacer scroll */
+}
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-auto-rows: 1fr 1fr;
+}
+header .header-icons-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #47cfac;
+}
+header .header-icons-container .icons {
+    width: 15%;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-around;
+    justify-self: end;
+}
+header .icons span{
+    color: black;
+    font-size: 25px;
+}
+header .icons img{
+    width: 30px;
+    margin-top: 15%;
+}
+header .icons a:hover{
+    transform: scale(1.2);
+}
+header .icons a:hover,img:hover{
+    transform: scale(1.1);
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+nav .nav-logo-container {
+    margin-left: 50px;
+}
+nav .nav-logo-container img{
+    width: 70px;
+    border-radius: 50%;
+    margin-top:10px;
+}
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+nav .profile-link a {
+    font-size: 15px;
+    color: black;
+}
+nav .profile-link a:hover {
+    font-size: 16px;
+    text-decoration: underline;
+}
+.body-container {
+    background: url(../assets/img/background2.jpg);
+    background-size: 100% 100%;
+}
+.body-container-title {
+    display: flex;
+    width: 70%;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    
+} 
+.body-container-title h1{
+    margin-top: 15%;
+    margin-bottom: 10%;
+    color: honeydew;
+    font-size: 35px;
+    text-align: center;
+} 
+.body-container  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.body-container .button-container button{
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 25px;
+    width: 15%;
+    height: 15%;
+    background-color: rgb(182, 81, 35);
+    margin-bottom: 15%;
+}
+.body-container .button-container button:hover{
+    transform: scale(1.2);
+}
