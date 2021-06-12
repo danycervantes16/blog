@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&family=Roboto+Slab:wght@300;500;700&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -78,7 +80,9 @@ nav .profile-link a:hover {
 }
 .body-container {
     background: url(../assets/img/background2.jpg);
-    background-size: 100% 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .body-container-title {
     display: flex;
@@ -88,12 +92,13 @@ nav .profile-link a:hover {
     margin: auto;
     
 } 
-.body-container-title h1{
+.body-container-title p{
     margin-top: 15%;
     margin-bottom: 10%;
     color: honeydew;
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
+    font-family: 'Roboto mono', monospace;
 } 
 .body-container  .button-container {
     width: 100%;
@@ -109,6 +114,7 @@ nav .profile-link a:hover {
     height: 15%;
     background-color: rgb(182, 81, 35);
     margin-bottom: 15%;
+    font-family: 'Roboto mono', monospace;
 }
 .body-container .button-container button:hover{
     transform: scale(1.2);
